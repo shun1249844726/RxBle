@@ -68,12 +68,12 @@ public class MainActivity extends AppCompatActivity {
                 // Get list of devices and other information
                 System.out.println("name:"+bleDevice.getName()+";");
                 if (bleDevice.getName().contains("test")){
-                    System.out.println("conn");
+                    System.out.println("conndd");
                     mRxBle.connectDevice(bleDevice);
                 }
             }
         });
-        
+
     }
 
     @OnClick(R.id.btn_send)
