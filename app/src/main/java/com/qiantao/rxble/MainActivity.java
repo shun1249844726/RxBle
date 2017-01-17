@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         mStringBuffer = new StringBuffer();
-        mRxBle = RxBle.getInstance().setTargetDevice("Test");
+        mRxBle = RxBle.getInstance().setTargetDevice("Test");//为名字
         mRxBle.openBle(this);
         mRxBle.scanBleDevices(true);
         mRxBle.receiveData().subscribe(new Action1<String>() {
